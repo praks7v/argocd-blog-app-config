@@ -1,0 +1,14 @@
+#blog-web-service.yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: blog-web-service
+spec:
+  type: ClusterIP
+  selector:
+    app: blog-web
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+  
