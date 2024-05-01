@@ -4,7 +4,7 @@ metadata:
   name: blogapp-argo-application
   namespace: argocd
 spec:
-  project: defult
+  project: default
 
   source:
     repoURL: https://github.com/praks7v/argocd-blog-app-config.git
