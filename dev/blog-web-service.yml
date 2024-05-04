@@ -4,11 +4,11 @@ kind: Service
 metadata:
   name: blog-web-service
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: blog-web
   ports:
     - protocol: TCP
-      port: 3000
+      port: 80
       targetPort: 3000
   
